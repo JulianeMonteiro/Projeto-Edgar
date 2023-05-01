@@ -111,6 +111,11 @@ section > p {
 #aparente > h2 {
   color: rgb(230, 0, 230);
 }
+
+#observacao > h2 {
+  color: rgb(0, 184, 230);
+}
+
 h2 {
   font-family: "Ubuntu", sans-serif;
   margin-bottom: 10px;
@@ -120,4 +125,17 @@ p {
   font-family: "Ubuntu", sans-serif;
   line-height: 1.2em;
   color: rgb(64, 64, 64);
+}
+
+footer {
+  background-color: gray;
+  text-align: center;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: white;
 }
