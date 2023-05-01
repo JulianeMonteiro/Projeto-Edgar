@@ -103,7 +103,7 @@ p {
 @media screen and (max-width: 600px) {
   .menu-burguer > h1 {
     padding-left: 12%;
-    font-size: 35px;
+    font-size: 28px;
   }
 }
 @media screen and (max-width: 450px) {
