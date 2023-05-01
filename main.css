@@ -12,7 +12,6 @@ body {
 .container {
   margin: 0 auto;
   padding: 30px 0;
-  width: 90vw;
 }
 
 header {
@@ -21,13 +20,18 @@ header {
 
 .menu-burguer {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
   align-items: center;
+  background-color: black;
+  width: 100%;
 }
 
 .menu-burguer > h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 45px;
-  padding-left: 30%;
+  padding-left: 430px;
 }
 
 i#menu-icon {
@@ -35,6 +39,7 @@ i#menu-icon {
   color: white;
   display: block;
   text-align: center;
+  padding: 10px;
   cursor: pointer;
   padding: 20px;
   border-radius: 10px;
@@ -47,7 +52,10 @@ i#menu-icon:hover {
 
 menu {
   display: none;
-  
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
 }
 
 menu > ul {
@@ -84,6 +92,30 @@ section > p {
   padding: 3px 0;
 }
 
+#ligacao > h2 {
+  color: rgb(212, 212, 0);
+}
+
+#permanente > h2 {
+  color: red;
+}
+
+#transitorio > h2 {
+  color: blue;
+}
+
+#mutatorio > h2 {
+  color: rgb(0, 225, 0);
+}
+
+#aparente > h2 {
+  color: rgb(230, 0, 230);
+}
+
+#observacao > h2 {
+  color: rgb(0, 184, 230);
+}
+
 h2 {
   font-family: "Ubuntu", sans-serif;
   margin-bottom: 10px;
@@ -95,9 +127,29 @@ p {
   color: rgb(64, 64, 64);
 }
 
+footer {
+  background-color: gray;
+  text-align: center;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: white;
+}
+
+@media screen and (max-width: 1650px) {
+  .menu-burguer > h1 {
+    padding-left: 30%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .menu-burguer > h1 {
     padding-left: 20%;
+    font-size: 38px;
   }
 }
 
@@ -117,3 +169,17 @@ p {
     padding: 10px;
   }
 }
+
+@media screen and (min-width: 250px) and (max-width: 449px) {
+  .menu-burguer > h1 {
+    padding: 5% 5% 5% 8%;
+
+    align-items: center;
+    font-size: 25px;
+  }
+
+  i#menu-icon {
+    padding: 10px;
+  }
+}
+
