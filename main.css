@@ -104,6 +104,13 @@ section > p {
   color: blue;
 }
 
+#mutatorio > h2 {
+  color: rgb(0, 225, 0);
+}
+
+#aparente > h2 {
+  color: rgb(230, 0, 230);
+}
 h2 {
   font-family: "Ubuntu", sans-serif;
   margin-bottom: 10px;
